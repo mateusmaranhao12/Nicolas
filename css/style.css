@@ -1,0 +1,415 @@
+@charset "UTF-8";
+/*Estrutura*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: black;
+  background: linear-gradient(297deg, black 0%, #000016 48%, #000320 83%, #030068 100%);
+}
+
+/*Texto principal*/
+.texto-principal .jumbotron {
+  background: none;
+}
+
+.texto-principal h1 {
+  font-size: 2em;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.texto-principal p {
+  color: white;
+  text-align: center;
+  font-size: 1.4em;
+  margin-bottom: 60px;
+}
+
+.texto-principal .btn-success {
+  font-weight: bold;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.4em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  border-radius: 20px;
+}
+
+.texto-principal .btn-success:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.resultados {
+  background-color: #99ff00;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.resultados h3 {
+  color: black;
+  text-align: center;
+  font-size: 3em;
+}
+
+.resultados h4 {
+  text-align: center;
+  color: #000;
+  font-size: 20px;
+}
+
+/*Serviços*/
+.texto-servicos h1 {
+  margin-top: 30px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.servicos h4 {
+  padding: 10px;
+  background-color: aqua;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+.servicos .btn-success {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.4em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  border-radius: 20px;
+}
+
+.servicos .btn-success:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/*Insta*/
+.insta {
+  background-color: black;
+  padding: 20px;
+}
+
+.insta .btn-primary {
+  background-image: -webkit-gradient(linear, left top, right top, from(#D38312), color-stop(51%, #A83279), to(#D38312));
+  background-image: linear-gradient(to right, #D38312 0%, #A83279 51%, #D38312 100%);
+}
+
+.insta .btn-primary {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 10px #eee;
+          box-shadow: 0 0 10px #eee;
+  border-radius: 10px;
+  display: block;
+  font-size: 1.2em;
+}
+
+.insta .btn-primary:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Como funciona*/
+.como-funciona {
+  background-color: #008cff;
+}
+
+.como-funciona h1 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.como-funciona p {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+.como-funciona .fundo-branco {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.como-funciona .fundo-branco img {
+  height: 90px;
+}
+
+/*Trafegar*/
+.texto-trafegar h1 {
+  background-color: #000;
+  color: white;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 30px;
+  text-align: center;
+}
+
+.trafegar {
+  padding: 40px;
+}
+
+.trafegar h3 {
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.trafegar .fa-check {
+  background-color: green;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.trafegar .btn-success {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.4em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  border-radius: 20px;
+}
+
+.trafegar .btn-success:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/*Resultados dos clientes*/
+.resultados-clientes {
+  background-color: #0051ff;
+  padding: 20px;
+}
+
+.resultados-clientes h1 {
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.resultados-clientes .btn-success {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.4em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  border-radius: 20px;
+}
+
+.resultados-clientes .btn-success:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.resultados-clientes .card {
+  margin-top: 30px;
+  background-color: #0051ff;
+  border: none;
+}
+
+.resultados-clientes h4 {
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.resultados-clientes h6 {
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+.resultados-clientes .fa-check {
+  background-color: green;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+/*Pra que serve*/
+.para-quem-serve {
+  background-color: black;
+  padding: 30px;
+}
+
+.para-quem-serve .btn-success {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.para-quem-serve .btn-success:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.para-quem-serve h1 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+}
+
+.para-quem-serve .cartao {
+  margin-top: 30px;
+  background-color: #3b3b3b;
+  padding: 20px;
+  -webkit-box-shadow: -10px -7px teal;
+          box-shadow: -10px -7px teal;
+}
+
+.para-quem-serve .cartao img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.para-quem-serve .cartao h5 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.para-quem-serve .cartao p {
+  color: white;
+  text-align: center;
+}
+
+.para-quem-serve .cartao a {
+  text-align: center;
+}
+
+.para-quem-serve .cartao .fa-arrow-right {
+  color: white;
+  font-weight: bold;
+  display: block;
+}
+
+.para-quem-serve .cartao .fa-arrow-right:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.para-quem-serve .cartao:hover {
+  -webkit-box-shadow: -10px -7px #0073b6;
+          box-shadow: -10px -7px #0073b6;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+/*Footer*/
+.footer {
+  padding: 20px;
+}
+
+.footer h6 {
+  color: #fff;
+  text-align: center;
+}
+
+/*Animações*/
+.reveal {
+  position: relative;
+  -webkit-transform: transition(150px);
+          transform: transition(150px);
+  opacity: 0;
+  -webkit-transition: 1.5s all ease;
+  transition: 1.5s all ease;
+}
+
+.reveal.active {
+  -webkit-transform: transition(0);
+          transform: transition(0);
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
